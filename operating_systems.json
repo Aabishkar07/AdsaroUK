@@ -1,0 +1,247 @@
+[
+    {
+        "type": "IOS",
+        "name": "IOS",
+        "children": [
+            {
+                "type": "IOS_18",
+                "name": "IOS 18"
+            },
+            {
+                "type": "IOS_17",
+                "name": "IOS 17"
+            },
+            {
+                "type": "IOS_16",
+                "name": "IOS 16"
+            },
+            {
+                "type": "IOS_15",
+                "name": "IOS 15"
+            },
+            {
+                "type": "IOS_14",
+                "name": "IOS 14"
+            },
+            {
+                "type": "IOS_13",
+                "name": "IOS 13"
+            },
+            {
+                "type": "IOS_12",
+                "name": "IOS 12"
+            },
+            {
+                "type": "IOS_11",
+                "name": "IOS 11"
+            },
+            {
+                "type": "IOS_10",
+                "name": "IOS 10"
+            },
+            {
+                "type": "IOS_9",
+                "name": "IOS 9"
+            },
+            {
+                "type": "IOS_8",
+                "name": "IOS 8"
+            },
+            {
+                "type": "IOS_7",
+                "name": "IOS 7"
+            },
+            {
+                "type": "IOS_6",
+                "name": "IOS 6"
+            },
+            {
+                "type": "IOS_5",
+                "name": "IOS 5"
+            },
+            {
+                "type": "IOS_4",
+                "name": "IOS 4"
+            }
+        ]
+    },
+    {
+        "type": "CHROME_OS",
+        "name": "Chrome OS"
+    },
+    {
+        "type": "ANDROID",
+        "name": "Android",
+        "children": [
+            {
+                "type": "ANDROID_15",
+                "name": "Android 15"
+            },
+            {
+                "type": "ANDROID_14",
+                "name": "Android 14"
+            },
+            {
+                "type": "ANDROID_13",
+                "name": "Android 13"
+            },
+            {
+                "type": "ANDROID_12",
+                "name": "Android 12"
+            },
+            {
+                "type": "ANDROID_11",
+                "name": "Android 11"
+            },
+            {
+                "type": "ANDROID_10",
+                "name": "Android 10"
+            },
+            {
+                "type": "ANDROID_9",
+                "name": "Android 9"
+            },
+            {
+                "type": "ANDROID_8",
+                "name": "Android 8"
+            },
+            {
+                "type": "ANDROID_7",
+                "name": "Android 7"
+            },
+            {
+                "type": "ANDROID_6",
+                "name": "Android 6"
+            },
+            {
+                "type": "ANDROID_5",
+                "name": "Android 5"
+            },
+            {
+                "type": "ANDROID_4",
+                "name": "Android 4"
+            },
+            {
+                "type": "ANDROID_2",
+                "name": "Android 2"
+            },
+            {
+                "type": "ANDROID_1",
+                "name": "Android 1"
+            }
+        ]
+    },
+    {
+        "type": "WINDOWS",
+        "name": "Windows",
+        "children": [
+            {
+                "type": "WINDOWS_11",
+                "name": "Windows 11"
+            },
+            {
+                "type": "WINDOWS_10",
+                "name": "Windows 10"
+            },
+            {
+                "type": "WINDOWS_8",
+                "name": "Windows 8"
+            },
+            {
+                "type": "WINDOWS_7",
+                "name": "Windows 7"
+            },
+            {
+                "type": "WINDOWS_VISTA",
+                "name": "Windows Vista"
+            },
+            {
+                "type": "WINDOWS_XP",
+                "name": "Windows XP"
+            }
+        ]
+    },
+    {
+        "type": "MACOS",
+        "name": "MacOS",
+        "children": [
+            {
+                "type": "MACOS_10_15",
+                "name": "MacOS 10.15 Catalina"
+            },
+            {
+                "type": "MACOS_10_14",
+                "name": "MacOS 10.14 Mojave"
+            },
+            {
+                "type": "MACOS_10_13",
+                "name": "MacOS 10.13 High Sierra"
+            },
+            {
+                "type": "MACOS_15",
+                "name": "MacOS 14 Catalina"
+            },
+            {
+                "type": "MACOS_14",
+                "name": "MacOS 14 Sonoma"
+            },
+            {
+                "type": "MACOS_10_12",
+                "name": "MacOS 10.12 Sierra"
+            },
+            {
+                "type": "MACOS_10_11",
+                "name": "MacOS 10.11 El Capitan"
+            },
+            {
+                "type": "MACOS_13",
+                "name": "MacOS 13 Ventura"
+            },
+            {
+                "type": "MACOS_12",
+                "name": "MacOS 12 Monterey"
+            },
+            {
+                "type": "MACOS_10_10",
+                "name": "MacOS 10.10 Yosemite"
+            },
+            {
+                "type": "MACOS_10_9",
+                "name": "MacOS 10.9 Mavericks"
+            },
+            {
+                "type": "MACOS_10_8",
+                "name": "MacOS 10.8 Mountain Lion"
+            },
+            {
+                "type": "MACOS_10_7",
+                "name": "MacOS 10.7 Lion"
+            },
+            {
+                "type": "MACOS_10_6",
+                "name": "MacOS 10.6 Snow Leopard"
+            },
+            {
+                "type": "MACOS_10_5",
+                "name": "MacOS 10.5 Leopard"
+            },
+            {
+                "type": "MACOS_11",
+                "name": "MacOS 11 Big Sur"
+            }
+        ]
+    },
+    {
+        "type": "LINUX",
+        "name": "Linux"
+    },
+    {
+        "type": "OTHER",
+        "name": "Other"
+    },
+    {
+        "type": "UNKNOWN",
+        "name": "Unknown"
+    }
+]
+

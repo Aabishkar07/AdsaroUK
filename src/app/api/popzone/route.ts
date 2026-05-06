@@ -1,0 +1,86 @@
+import { NextResponse } from "next/server";
+
+export async function POST(req: Request) {
+  try {
+    const body = await req.json();
+    console.log("mybody", JSON.stringify(body));
+
+    const response = await fetch(
+      `https://panel.adsaro.com/admin/api/PublisherFeed/?version=4&userToken=1wDtEkEz2ykyOdyx`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(body.data),
+      }
+    );
+
+    const text = await response.text().catch(() => "");
+    const contentType = response.headers.get("content-type") || "";
+
+    let data: unknown = null;
+    try {
+      if (contentType.includes("application/json")) {
+        data = text ? JSON.parse(text) : null;
+      } else {
+        data = { raw: text };
+      }
+    } catch {
+      data = { raw: text };
+    }
+
+    console.log("donedata", data);
+    return NextResponse.json(data, { status: response.status });
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to fetch datas" + error },
+      { status: 500 }
+    );
+  }
+}
+export async function PUT(req: Request) {
+  try {
+    const body = await req.json();
+    const editData = body.data;
+    const dara = {
+      publisher_id: editData.publisherData?.id,
+      description: editData.description,
+    };
+    console.log("mybodyasas", dara);
+    const response = await fetch(
+      `https://panel.adsaro.com/admin/api/PublisherFeed/${editData?.id}?version=4&userToken=1wDtEkEz2ykyOdyx`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(dara),
+      }
+    );
+
+    const text = await response.text().catch(() => "");
+    const contentType = response.headers.get("content-type") || "";
+
+    let data: unknown = null;
+    try {
+      if (contentType.includes("application/json")) {
+        data = text ? JSON.parse(text) : null;
+      } else {
+        data = { raw: text };
+      }
+    } catch {
+      data = { raw: text };
+    }
+
+    console.log("donedata", data);
+    return NextResponse.json(data, { status: response.status });
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to fetch datas" + error },
+      { status: 500 }
+    );
+  }
+}
